@@ -202,4 +202,13 @@ class BouncyRectLineView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : BouncyRectLineView {
+            val view : BouncyRectLineView = BouncyRectLineView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
